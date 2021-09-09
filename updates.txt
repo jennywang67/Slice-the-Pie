@@ -1,0 +1,71 @@
+Summarize What You Did Here 
+(just to stay organized)
+
+Jenny 5/18
+- Made replit for all of us
+
+Brandon 5/21
+- Setup initial page title and instructions
+- CSS for page background, font, colors
+
+Bijun 5/24
+- created PieChart component and attempts to get the pie chart
+- mentioned on project page that TA will go over that tomorrow (so i'll wait and attend tomorrow's discussion to get that)
+*Entries done in the Entries component*
+- design of the entries (including the circles next to the functions)
+- i have no idea how to make the percentage sign within the input box...
+
+Bijun 5/25
+-removed MyD3Components, bc it's bar chart. After getting the piechart layout in PirChartComponents.jsx, i think it's good to remove that barchart.
+-progress chart appearance *i decided to build progress bar off of scratch, if anyone want to use ui components instead, feel free to make another component. :)*
+-implementing NextButton and connecting to progress bar
+-5/26: pie chart responsiveness and update total %
+-changed value = {preVal} to placeholder = "0", so 0 won't be there when we input new values
+-progress bar progresses when clicked next
+
+Brandon 5/26
+- Added tooltips
+- CSS work on entries
+- Consolidated revenue and expense data into a single file
+- Converted hardcoded Entries instances to loop based construction from data.jsx
+- debugging piechart to fix incorrect data rendering -> now updates $empty on change
+
+Brandon 5/27
+- corrected input maximum logic to exclude self in calculations
+- modified input to piechart.jsx to accept data as prop instead of being hardcoded
+- Changed tooltips from unicode to d3 svg
+- Adjusted color circle sizes
+
+5/28
+-total percentage update upon changing values
+-able to change to expense page
+
+Brandon 5/28
+- updated pichartfunctional.jsx to updated version provided by TAs
+
+Brandon 5/30
+- made input font bold and white when value is non-zero
+
+Jenny 5/31
+- 
+
+Brandon 6/1
+- adjusted circle svg widths and heights to be as minimal as possible
+- adjusted placement for progress bar labels
+- modified compare.jsx to use data from data.jsx for consistency
+- corrected font import to include more weight variants
+- changed button font sizes and weights, adjusted button colors for compare and previous to match design doc
+
+Jenny 6/2
+
+Brandon 6/2
+- fixed "cannot update a component while rendering a different component" 
+  - https://flaviocopes.com/react-update-while-rendering-different-component/
+- broad reworking of internal data storage (array of objects -> map<int, object array>), reworked component interactions, modfied and consolidated states
+  - added functionality for retaining data when going back using preivous button
+  - added functionality for clearing data on restart
+- fixed input placeholder
+Brandon 6/3
+- modified ProBarComponents to scale correctly on wider viewports
+- removed className="chart-comparison" in App.jsx so ProgressBar scales correctly, no issues in layout noticed?
+- forgot to add "RESULTS" to expenses compare page, fixed

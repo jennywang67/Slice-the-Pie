@@ -1,0 +1,27 @@
+.nav-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-buttons > button {
+  border: none;
+  margin-top:20px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.nav-buttons .previous-button {
+  background: #7F8187;
+  color: white;
+}
+
+.nav-buttons .compare-button {
+  background: #71A8FF
+}
